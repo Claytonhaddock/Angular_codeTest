@@ -1,0 +1,13 @@
+<table>	
+	<tr>	
+		<th class="foodName" style="color: #D4D4D4">NAME</th>
+		<th class="foodPrice" style="color: #D4D4D4">Price</th>
+		<th class="foodCat" style="color: #D4D4D4">Category</th>
+	</tr>
+	<tr class="cookie" ng-repeat="food in info | filter: $parent.filterBy | orderBy: $parent.sortBy">
+		<th class="foodName">{{ food.name }}</th>
+		<th class="foodPrice">{{ food.price}}</th>
+		<th class="foodCat">{{ food.category }}</th>
+	</tr>
+</table>	
+

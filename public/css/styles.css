@@ -1,0 +1,70 @@
+* {
+	margin: 0px;
+	padding:0px;
+	color: #404040;
+	font-family: sans-serif;
+}
+
+body {
+	margin: 0px auto;
+	width: 700px;
+	display: flex;
+	flex-direction: row;
+	background-color: #F2F2F2;
+}
+
+
+.inline {
+	display: flex;
+	flex-direction: row;
+}
+
+.foodName {
+	width:300px;
+	text-align: left;
+}
+
+.foodPrice {
+	width: 100px;
+	text-align: left;
+}
+
+.foodCat {
+	width: 200px;
+	text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #EBEBEB;
+}
+
+table {
+	padding: 10px;
+	-webkit-box-shadow: 1px 4px 20px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 4px 20px 0px rgba(0,0,0,0.75);
+	box-shadow: 1px 4px 20px 0px rgba(0,0,0,0.75); 
+}
+
+input {
+	height:30px;
+	border: none;
+	padding-left:5px;
+}
+
+select {
+	height:30px;
+	border: none;
+}
+
+form {
+	margin-top: 20px;
+}
+
+input[type=submit] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}

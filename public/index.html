@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="cookieApp">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Code Test</title>
+		<link rel="stylesheet" href="css/styles.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+		<script src="js/controllers/controller.js"></script>
+		<script src="js/directives/cookie.js"></script>
+		<!--<script src="js/directives/jobInfo.js"></script> -->
+	</head>
+	<body ng-controller="cookieCtrl">
+		<div class="rightside">
+			
+			<div class="inline">
+			<div>
+				<p>Sort</p>
+				<select class="form-control" ng-model="sortBy">
+	            	<option value="">None</option>
+	            	<option value="name">name</option>
+	            	<option value="price">price</option>
+	            	<option value="category">category</option>
+	        	</select>
+			</div>
+			<div style='padding-left:10px'>				
+	        <p>Filter</p>
+	        	<select class="form-control" ng-model="filterBy">
+	        		<option value="">None</option>
+	            	<option value="standard">standard</option>
+	            	<option value="premium">premium</option>
+	            	<option value="Signature">Signature</option>
+	        	</select>
+	        </div>
+	        </div>
+		<cookie info='newData'></cookie>
+		<form ng-submit="submit()">Add new cookie 
+	  			<input type="text" ng-model="cookieName" value="cookie name" placeholder="Cookie name">
+	  			<input type="text" ng-model="cookiePrice" value="cookie price" placeholder="Cookie price">
+	  			<select class="form-control" ng-model="cookieCat">
+	            	<option value="Standard">standard</option>
+	            	<option value="Premium">premium</option>
+	            	<option value="Signature">Signature</option>
+	        	</select>
+	  			<input type="submit">
+			</form>
+		</div>
+	</body>
+</html>
